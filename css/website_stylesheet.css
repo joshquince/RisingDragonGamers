@@ -1,0 +1,100 @@
+.body{
+ color:white;
+ background-color: rgb(65, 83, 35);
+ font-family: 'Times New Roman', Times, serif;
+ padding-left:25px;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container{
+    padding: 75px 0;
+    margin: 0 auto;
+    width: 1140px;
+  }
+  
+  h1{
+    position: relative;
+    margin-bottom: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40vh;
+  }
+  
+  .item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+  }
+
+    .item:hover{
+    flex: 7;
+}
+  
+  .item-1 { 
+    background-image: url('../images/superhot.jpg');
+  }
+  
+  .item-2 { 
+    background-image: url('../images/dungeons_and_dragons.jpg');
+  }
+  
+  .item-3 { 
+    background-image: url('../images/gilloutine_card_game.jpg');
+  }
+  
+  .item-4 { 
+    background-image: url('../images/world_of_warcraft.jpg');
+  }
+  
+  .item-5 { 
+    background-image: url('../images/raw_data.jfif');
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
